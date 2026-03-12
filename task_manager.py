@@ -283,7 +283,9 @@ def complete_task():
 
     if 0 < task_number <= len(tasks):
 
-        tasks[task_number - 1]["completed"] = True
+        # tasks[task_number - 1]["completed"] = True
+        task = tasks[task_number - 1]
+        task["completed"] = True
 
         print(f"🎉{task['title']} Task marked as completed!")
 
